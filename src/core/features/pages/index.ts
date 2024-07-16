@@ -1,0 +1,1 @@
+export {default as HomePage} from "@/core/features/pages/home-page/homePage"
