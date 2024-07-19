@@ -2,7 +2,7 @@ import React from 'react'
 
 function HeroSection() {
   return (
-    <section className= ' container py-12'>
+    <section className= ' container my-16'>
       <h1 className='text-4xl font-bold text-center font-sans'>
         Find your dream job
       </h1>
