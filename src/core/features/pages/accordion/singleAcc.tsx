@@ -5,16 +5,25 @@ import { Divide, Plus } from 'lucide-react'
 
 function SingleAcc() {
   const [selected, setSelected] = useState(null)
-  const [visible, setVisible] = useState(false)
+  const[enablemultiSelect, setEnablemultiSelect] = useState(false)
+  const[multipleSelectArray, setMultiSelectArray] = useState([])
 
   function handleSingleClick(id) {
-    setSelected(id === selected ? null : id)
+    setSelected(id === selected ? "" : id)
+  }
+
+  function handlmulti () {
+  setEnablemultiSelect(true)
+  
+   
   }
 
   return (
     <div className='pt-10'>
+           <button className='p-3 bg-black cursor-pointer  text-white items-center' onClick={()=>{handlmulti}}>Enable multiselection</button>
       {data.map((dataitem) => (
         <div className=" p-6 flex flex-col gap-4">
+     
 
           <div className='flex flex-col  bg-red-900 p-6 cursor-pointer' onClick={() => handleSingleClick(dataitem.id)}>
             <div className='flex justify-between'>
