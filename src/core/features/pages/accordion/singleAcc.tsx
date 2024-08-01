@@ -14,7 +14,7 @@ function SingleAcc() {
           filtedId !== id
         ))
       } else {
-              setSelected([...selected, id])
+        setSelected([...selected, id])
       }
     } else {
       setSelected(id === selected[0] ? [] : [id])
@@ -22,10 +22,10 @@ function SingleAcc() {
     }
   }
 
-  console.log(selected[0] , "suppose to be an array");
+  console.log(selected[0], "suppose to be an array");
   console.log(selected);
-  
-  
+
+
 
   function handleMultiSelect() {
     setEnableMultiSelect(true)
@@ -52,7 +52,8 @@ function SingleAcc() {
 
               )}
             </div>
-            {selected[0] === dataitem.id ? <div className='text-white'>
+
+            {selected?.includes(dataitem.id) ? <div className='text-white'>
               {dataitem.description}
             </div> :
               null
