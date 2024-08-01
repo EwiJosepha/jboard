@@ -22,11 +22,6 @@ function SingleAcc() {
     }
   }
 
-  console.log(selected[0], "suppose to be an array");
-  console.log(selected);
-
-
-
   function handleMultiSelect() {
     setEnableMultiSelect(true)
   }
