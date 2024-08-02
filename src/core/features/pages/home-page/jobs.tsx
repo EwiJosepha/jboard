@@ -1,4 +1,5 @@
 import SingleAcc from '../accordion/singleAcc'
+import QrCodeGenerator from '../qrGenerator/qr'
 import Jobrow from './jobrow'
 
 
@@ -12,7 +13,8 @@ function Jobs() {
           <Jobrow />
         </div>
       </div>
-      <SingleAcc />
+      {/* <SingleAcc /> */}
+      <QrCodeGenerator  />
     </>
   )
 }
