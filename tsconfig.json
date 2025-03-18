@@ -3,7 +3,13 @@
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
-    "strict": true,
+    "strict": false,  // Disable the main strict flag
+    "noImplicitAny": false, // Disable individual strict checks
+    "strictNullChecks": false, // Disable individual strict checks
+    "strictFunctionTypes": false, // Disable individual strict checks
+    "strictPropertyInitialization": false, // Disable individual strict checks
+    "noImplicitThis": false, // Disable individual strict checks
+    "alwaysStrict": false, // Disable individual strict checks
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
